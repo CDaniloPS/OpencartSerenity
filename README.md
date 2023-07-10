@@ -1,25 +1,44 @@
-# Serenity JUnit Starter project
+# Project opencartserenity
+> Ejercicio de automatizacion E2E.
 
-Get started quickly with Serenity BDD and JUnit 5 with this simple starter project. 
+## Table of Contents
+* [Technologies Used](#Prerequisitos)
+* [Implementation](#Implementacion)
+* [Flow](#flujo)
+* [Instructions to run the test]
+* [Project Status](#project-status)
 
-## Get the code
 
-Click on the [Use This Template button](https://github.com/serenity-bdd/serenity-junit-starter/generate) to create a new project in your own Github account. 
+## Technologies Used
+	- Maquina local con el sistema operativo Windows 10
+	- Spring Tool Suite 4 para Eclipse (archivo spring-tool-
+	  suite-4-4.18.0.RELEASE-e4.27.0-win32.win32.x86_64.self-extracting)
+	- JDK versión 17 (archivo jdk-17_windows-x64_bin)
 
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
 
-## Running the tests under Maven
+## Implementation
+    - Descargar e instalar de la pagina https://spring.io/tools y crear un workspace
+	- Descargar el proyecto serenity-opencart.zip 
+	- Descomprimir el archivo en el workspace de Spring tool
+	- En Spring tool Suite ir a File/Import y seleccionar dentro de General -> Existing Projects into 
+	  Workspace y en siguiente seleccionar el proyecto serenity-opencart y cargar.
 
-The template project comes with both Maven and Gradle build scripts. To run the tests with Maven, open a command window and run:
 
-  mvn clean verify
+## Flow
+Prueba funcional de un flujo de compra en la pagina de opencart.abstracta.us:
+- Agregar dos productos al carrito.
+- Visualizar el carrito.
+- Completar el Checkout como invitado Guest Checkout.
+- Finalizar la compra hasta confirmacion: Your order has been placed!
 
-## Use Gradle
+## Instructions to run the test
+-Op1. Seleccionar el proyecto opencartserenity y dar click derecho para seleccionar Run As y usar 
+      la opcion JUnit Test, en la nueva ventana seleccionar WhenBuyOpencart.java y pulsar 
+	  en OK para ejecutar.
+-Op2. Dentro del proyecto opencartserenity ir a src/test/java/starter/opencart y seleccione el 
+      archivo WhenBuyOpencart.java, dar click derecho para seleccionar Run As y usar la opcion 
+	  JUnit Test para ejecutar.
 
-For GRADLE, pen a command window and run:
 
-  gradlew test 
-
-## Viewing the reports
-
-Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
+## Project Status
+Project is:  _complete_
